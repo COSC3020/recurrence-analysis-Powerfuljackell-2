@@ -34,9 +34,6 @@ function mystery(n) {
 Add your answer to this markdown file. [This
 page](https://docs.github.com/en/get-started/writing-on-github/working-with-advanced-formatting/writing-mathematical-expressions)
 might help with the notation for mathematical expressions.
-
-//Worked Directly With Aaron Krapes in person
-
 $$ T(n) =
    \begin{cases}
        1 & n \leq 1\\
