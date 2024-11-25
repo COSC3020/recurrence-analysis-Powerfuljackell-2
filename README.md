@@ -2,7 +2,7 @@
 
 "I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice." 
 
-Used prior approved work at: https://github.com/COSC3020/recurrence-analysis-Powerfuljackell-1
+Used prior work from: https://github.com/COSC3020/recurrence-analysis-Powerfuljackell-1
 
 Analyze the running time of the following recursive procedure as a function of
 $n$ and find a tight big $O$ bound on the runtime for the function. You may
@@ -50,15 +50,13 @@ $= 9T(\frac{n}{9}) + \frac{n^5}{3^4} + n^5$
 
 $= 27T(\frac{n}{27}) + \frac{n^5}{9^4} + \frac{n^5}{3^4} + n^5$
 
-$= 27T(\frac{n}{27}) + \frac{n^5}{3^8} + \frac{n^5}{3^4} + n^5$
-
 $…$
 
-$= 3^iT(\frac{n}{3^i}) +$
-$(\sum_{k=0}^i (\frac{1}{3^4})^k)$
-$\cdot n^5 $
+$= 3^iT(\frac{n}{3^i}) +$ 
 
-Note: $\sum_{k=0}^i (\frac{1}{3^4})^k = 1 +(\frac{1}{3^4})^1 +(\frac{1}{3^4})^2 ... (\frac{1}{3^4})^i$ 
+$(\sum_{k=0}^i (\frac{1}{3^4})^k)$
+
+$\cdot n^5 $
 
 for $i = \log n$
 
