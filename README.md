@@ -48,6 +48,8 @@ $= 3 \cdot 3T( \frac{n}{3 \cdot 3} ) + 3( \frac{n}{3} )^5 + n^5$
 
 $= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + 3( \frac{n}{3 \cdot 3})^5 + 3( \frac{n}{3} )^5 + n^5$
 
+$= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + 3( \frac{n^5}{(3 \cdot 3})^5) + 3( \frac{n^5}{(3)^5} ) + n^5$
+
 ...
 
 $= 3^i \cdot T( \frac{n}{3^i} ) + (\sum_{k=0}^i-1 (\frac{1}{(3)^(3+k)\}) + 1) * n^5$
