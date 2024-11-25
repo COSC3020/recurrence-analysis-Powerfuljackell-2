@@ -59,6 +59,8 @@ $= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + (\frac{3 \cdot 3}{(3 \cd
 
 $= 3^i \cdot T( \frac{n}{3^i} ) + (\sum_{k=0}^{i-1} (\frac{3^k}{3^{5k}})) * n^5$
 
+Test by plugging in 1 for i = 3T(\frac{n}{3}) + n^5
+
 for $i = \log n$
 
 
