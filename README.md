@@ -63,4 +63,4 @@ Test by plugging in 1 for i = $3T(\frac{n}{3}) + n^5$
 
 for $i = \log n$
 
-$nT(1) + ( \frac{3^{log(n)-1}}{3^{5(log(n)-1)}} + 1) \cdot n^5$ 
+$nT(1) + n^5 \cdot ( \frac{3^{log(n)-1}}{3^{5(log(n)-1)}} + 1)$ 
