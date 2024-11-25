@@ -62,3 +62,5 @@ $= 3^i \cdot T( \frac{n}{3^i} ) + (\sum_{k=0}^{i-1} (\frac{3^k}{3^{5k}})) * n^5$
 for $i = \log n$
 
 
+
+
