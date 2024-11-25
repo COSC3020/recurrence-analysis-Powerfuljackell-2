@@ -44,7 +44,7 @@ $$
 
 $T(n) = 3T(\frac{n}{3}) + n^5 $
 
-$T(n) = 3 \cdot 3T( \frac{n}{3 \cdot 3} ) + 3( \frac{n}{3} )^5 + n^5 
+$T(n) = 3 \cdot 3T( \frac{n}{3 \cdot 3} ) + 3( \frac{n}{3} )^5 + n^5$
 
 
 
