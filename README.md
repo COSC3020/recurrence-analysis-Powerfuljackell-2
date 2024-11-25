@@ -63,8 +63,8 @@ Test by plugging in 1 for i = $3T(\frac{n}{3}) + n^5$
 
 for $i = logn$
 
-$nT(1) + n^5 \cdot ( \frac{3^{log(n)-1}}{3^{5(log(n)-1)}} + 1)$
+$nT(1) + n^5 \cdot ( \frac{3^{logn-1}}{3^{5(logn-1)}} + 1)$
 
-$nT(1) + n^5 \cdot (\frac{3^{log(n)-1}}{3^{5(log(n)-1)}}) + n^5$
+$nT(1) + n^5 \cdot (\frac{3^{logn-1}}{3^{5(logn-1)}}) + n^5$
 
-$n^5 \cdot (\frac{3^{log(n)-1}}{3^{5(log(n)-1)}})$ will always be smaller in comparision to $n^5$ so $n^5 \in \Theta(n^5)$
+$n^5 \cdot (\frac{3^{logn-1}}{3^{5(logn-1)}})$ will always be smaller in comparision to $n^5$ so $n^5 \in \Theta(n^5)$
