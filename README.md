@@ -3,6 +3,7 @@
 "I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice." 
 
 Used prior work from: https://github.com/COSC3020/recurrence-analysis-Powerfuljackell-1
+Watched this youtube video: https://www.youtube.com/watch?v=1K9ebQJosvo
 
 Analyze the running time of the following recursive procedure as a function of
 $n$ and find a tight big $O$ bound on the runtime for the function. You may
@@ -46,17 +47,17 @@ $T(n) = 3T(\frac{n}{3}) + n^5 $
 
 $= 3 \cdot 3T( \frac{n}{3 \cdot 3} ) + 3( \frac{n}{3} )^5 + n^5$
 
-$= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + 3( \frac{n}{3 \cdot 3})^5 + 3( \frac{n}{3} )^5 + n^5$
+$= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + 3 \cdot 3( \frac{n}{3 \cdot 3})^5 + 3( \frac{n}{3} )^5 + n^5$
 
-$= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + 3( \frac{n^5}{(3 \cdot 3)^5}) + 3( \frac{n^5}{(3)^5} ) + n^5$
+$= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + 3 \cdot 3( \frac{n^5}{(3 \cdot 3)^5}) + 3( \frac{n^5}{(3)^5} ) + n^5$
 
-$= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + \frac{3n^5}{(3 \cdot 3)^5} + \frac{3n^5}{(3)^5} + n^5$
+$= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + \frac{3 \cdot 3n^5}{(3 \cdot 3)^5} + \frac{3n^5}{(3)^5} + n^5$
 
-$= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + (\frac{3}{(3 \cdot 3)^5} + \frac{3}{(3)^5} + 1) * n^5$
+$= 3 \cdot  3 \cdot 3T( \frac{n}{3 \cdot 3 \cdot 3} ) + (\frac{3 \cdot 3}{(3 \cdot 3)^5} + \frac{3}{(3)^5} + 1) * n^5$
 
 ...
 
-$= 3^i \cdot T( \frac{n}{3^i} ) + (\sum_{k=0}^{i-1} (\frac{3}{3^{5k}}) + 1) * n^5$
+$= 3^i \cdot T( \frac{n}{3^i} ) + (\sum_{k=0}^{i-1} (\frac{3^k}{3^{5k}})) * n^5$
 
 for $i = \log n$
 
